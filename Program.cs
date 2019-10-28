@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Collections.Generic;
 using System.Web;
 using Newtonsoft.Json;
+using FunctionsLibrary;
 
 namespace VS
 {
@@ -74,28 +75,19 @@ namespace VS
                     
                     try
                     {
-                        SqlConnection connection = new SqlConnection(parameterReader.ConnStrings[FileType]);
-                        SqlCommand command = new SqlCommand("", connection);
-                        connection.Open();
-                        command.CommandType = CommandType.StoredProcedure;
+                        SQLDB dbConnection = new SQLDB(parameterReader.ConnStrings[FileType]); 
+                        dbConnection.openDB();
+                        dbConnection.setCommand_StoredProcedure(parameterReader.StoredProc_dict[FileType]);
 
-                        command.CommandText = parameterReader.StoredProc_dict[FileType]; //Stored procedure for inserting data
                         if (FileType == "fileType.TOPRS")
                         {
-                            command.Parameters.Add("@ReportName", SqlDbType.NVarChar);
-                            command.Parameters["@ReportName"].Value = TOPRSReportName;
-                            command.Parameters.Add("@ReportYear", SqlDbType.Int);
-                            command.Parameters["@ReportYear"].Value = TOPRSReportYear;
-                            command.Parameters.Add("@ReportWeek", SqlDbType.Int);
-                            command.Parameters["@ReportWeek"].Value = TOPRSReportWeek;
-                            command.Parameters.Add("@IsTotal", SqlDbType.Int);
-                            command.Parameters["@IsTotal"].Value = TOPRSisTotal;
+                            dbConnection.addParameters_Input("@ReportName", TOPRSReportName, SqlDbType.NVarChar);
+                            dbConnection.addParameters_Input("@ReportYear", TOPRSReportYear, SqlDbType.Int);
+                            dbConnection.addParameters_Input("@ReportWeek", TOPRSReportWeek, SqlDbType.Int);
+                            dbConnection.addParameters_Input("@IsTotal", TOPRSisTotal, SqlDbType.Int);
                         }
-                        SqlParameter insertData = command.Parameters.AddWithValue("@InsertData", InsertData);  //Add the datatable as a table-valued parameter
-                        insertData.SqlDbType = SqlDbType.Structured;
-                        insertData.TypeName = parameterReader.TypeName_dict[FileType];
-
-                        command.ExecuteNonQuery();  //Insert data to DB. The stored procedure handles errors and logging
+                        dbConnection.addParameters_TableValued("@InsertData", InsertData, parameterReader.TypeName_dict[FileType]);
+                        dbConnection.executeNonQuery();  //Insert data to DB. The stored procedure handles errors and logging
                     
                         log[1] = "File inserted";             
                     }
