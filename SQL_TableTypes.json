@@ -1,0 +1,8 @@
+{
+    "fileType.SAP9502" : "[dbo].[SAPHoursData]",
+    "fileType.SAP9532" : "[dbo].[SAPHoursData]",
+    "fileType.SAP9000" : "[dbo].[SAPDollarsData]",
+    "fileType.TOPRSPlan" : "[dbo].[TOPRSPlanInput]",
+    "fileType.TOPRS" : "[dbo].[TOPRSInput]",
+    "fileType.TOPRSRollup" : "[dbo].[TOPRSRollupInput]"
+}

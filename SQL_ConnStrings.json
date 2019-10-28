@@ -1,0 +1,8 @@
+{
+    "fileType.SAP9502" : "Server=CPC-5CG8253WS6\\SQLEXPRESS;Integrated Security=SSPI;database=Hours",
+    "fileType.SAP9532" : "Server=CPC-5CG8253WS6\\SQLEXPRESS;Integrated Security=SSPI;database=Hours",
+    "fileType.SAP9000" : "Server=CPC-5CG8253WS6\\SQLEXPRESS;Integrated Security=SSPI;database=Dollars",
+    "fileType.TOPRSPlan" : "Server=CPC-5CG8253WS6\\SQLEXPRESS;Integrated Security=SSPI;database=TOPRS",
+    "fileType.TOPRS" : "Server=CPC-5CG8253WS6\\SQLEXPRESS;Integrated Security=SSPI;database=TOPRS",
+    "fileType.TOPRSRollup" : "Server=CPC-5CG8253WS6\\SQLEXPRESS;Integrated Security=SSPI;database=TOPRS"
+}

@@ -1,0 +1,14 @@
+C:\Users\gouldd2\FileSystem\CSharpie\bin\Release\netcoreapp2.1\win10-x64\hostpolicy.dll
+C:\Users\gouldd2\FileSystem\CSharpie\bin\Release\netcoreapp2.1\win10-x64\hostfxr.dll
+C:\Users\gouldd2\FileSystem\CSharpie\bin\Release\netcoreapp2.1\win10-x64\CSharpie.exe
+C:\Users\gouldd2\FileSystem\CSharpie\bin\Release\netcoreapp2.1\win10-x64\CSharpie.deps.json
+C:\Users\gouldd2\FileSystem\CSharpie\bin\Release\netcoreapp2.1\win10-x64\CSharpie.runtimeconfig.json
+C:\Users\gouldd2\FileSystem\CSharpie\bin\Release\netcoreapp2.1\win10-x64\CSharpie.runtimeconfig.dev.json
+C:\Users\gouldd2\FileSystem\CSharpie\bin\Release\netcoreapp2.1\win10-x64\CSharpie.dll
+C:\Users\gouldd2\FileSystem\CSharpie\bin\Release\netcoreapp2.1\win10-x64\CSharpie.pdb
+C:\Users\gouldd2\FileSystem\CSharpie\obj\Release\netcoreapp2.1\win10-x64\CSharpie.csprojAssemblyReference.cache
+C:\Users\gouldd2\FileSystem\CSharpie\obj\Release\netcoreapp2.1\win10-x64\CSharpie.csproj.CoreCompileInputs.cache
+C:\Users\gouldd2\FileSystem\CSharpie\obj\Release\netcoreapp2.1\win10-x64\CSharpie.AssemblyInfoInputs.cache
+C:\Users\gouldd2\FileSystem\CSharpie\obj\Release\netcoreapp2.1\win10-x64\CSharpie.AssemblyInfo.cs
+C:\Users\gouldd2\FileSystem\CSharpie\obj\Release\netcoreapp2.1\win10-x64\CSharpie.dll
+C:\Users\gouldd2\FileSystem\CSharpie\obj\Release\netcoreapp2.1\win10-x64\CSharpie.pdb

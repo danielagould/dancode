@@ -1,0 +1,11 @@
+C:\Users\gouldd2\FileSystem\CSharpie\obj\Debug\netcoreapp2.1\CSharpie.csprojAssemblyReference.cache
+C:\Users\gouldd2\FileSystem\CSharpie\obj\Debug\netcoreapp2.1\CSharpie.csproj.CoreCompileInputs.cache
+C:\Users\gouldd2\FileSystem\CSharpie\obj\Debug\netcoreapp2.1\CSharpie.AssemblyInfoInputs.cache
+C:\Users\gouldd2\FileSystem\CSharpie\obj\Debug\netcoreapp2.1\CSharpie.AssemblyInfo.cs
+C:\Users\gouldd2\FileSystem\CSharpie\bin\Debug\netcoreapp2.1\CSharpie.deps.json
+C:\Users\gouldd2\FileSystem\CSharpie\bin\Debug\netcoreapp2.1\CSharpie.runtimeconfig.json
+C:\Users\gouldd2\FileSystem\CSharpie\bin\Debug\netcoreapp2.1\CSharpie.runtimeconfig.dev.json
+C:\Users\gouldd2\FileSystem\CSharpie\bin\Debug\netcoreapp2.1\CSharpie.dll
+C:\Users\gouldd2\FileSystem\CSharpie\bin\Debug\netcoreapp2.1\CSharpie.pdb
+C:\Users\gouldd2\FileSystem\CSharpie\obj\Debug\netcoreapp2.1\CSharpie.dll
+C:\Users\gouldd2\FileSystem\CSharpie\obj\Debug\netcoreapp2.1\CSharpie.pdb

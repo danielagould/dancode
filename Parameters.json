@@ -1,0 +1,5 @@
+{
+    "ConnectionString" : "Server=CPC-5CG8253WS6\\SQLEXPRESS;Integrated Security=SSPI;database=Hours",
+    "UploadFile" : "C:\\Users\\gouldd2\\FileSystem\\Output\\Output.csv",
+    "FileDropFolder" : "C:\\Users\\gouldd2\\FileSystem\\Output"
+}
