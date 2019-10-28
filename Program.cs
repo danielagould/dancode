@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Web;
 using Newtonsoft.Json;
 
+
 namespace VS
 {
     class Program
@@ -18,7 +19,7 @@ namespace VS
             string [] allFiles = Directory.GetFiles(parameterReader.Parameters["FileDropFolder"]);
             
             string[] log = {"",""};
-            
+
             foreach (string upLoadFile in allFiles)
             {
                 DataTable InsertData = new DataTable();
