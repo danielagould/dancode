@@ -4,5 +4,7 @@
     "fileType.SAP9000" : "[Dollars].[dbo].[DollarsInsert]",
     "fileType.TOPRSPlan" : "[TOPRS].[dbo].[TOPRSPlanInsert]",
     "fileType.TOPRS" : "[TOPRS].[dbo].[TOPRSInsert]",
-    "fileType.TOPRSRollup" : "[TOPRS].[dbo].[TOPRSRollupInsert]"
+    "fileType.TOPRSRollup" : "[TOPRS].[dbo].[TOPRSRollupInsert]",
+    "fileType.SAP9502_WKLY" : "[Hours].[dbo].[HoursInsert_WKLY]",
+    "fileType.SAP9532_WKLY" : "[Hours].[dbo].[HoursInsert_WKLY]"
 }

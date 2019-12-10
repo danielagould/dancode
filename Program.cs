@@ -81,19 +81,23 @@ namespace VS
 
                         if (FileType == "fileType.TOPRS")
                         {
-                            dbConnection.addParameters_Input("@ReportName", TOPRSReportName, SqlDbType.NVarChar);
+                            dbConnection.addParameters_Input("@ReportName", TOPRSReportName, SqlDbType.VarChar);
                             dbConnection.addParameters_Input("@ReportYear", TOPRSReportYear, SqlDbType.Int);
                             dbConnection.addParameters_Input("@ReportWeek", TOPRSReportWeek, SqlDbType.Int);
                             dbConnection.addParameters_Input("@IsTotal", TOPRSisTotal, SqlDbType.Int);
                         }
+                        if (FileType == "fileType.SAP9502" || FileType == "fileType.SAP9532" || FileType == "fileType.SAP9502_WKLY" || FileType == "fileType.SAP9532_WKLY")
+                        {
+                            dbConnection.addParameters_Input("@ReportType", FileType, SqlDbType.VarChar);
+                        }
                         dbConnection.addParameters_TableValued("@InsertData", InsertData, parameterReader.TypeName_dict[FileType]);
                         dbConnection.executeNonQuery();  //Insert data to DB. The stored procedure handles errors and logging
-                    
-                        log[1] = "File inserted";             
+
+                        //log[1] = "File inserted";             
                     }
                     catch (Exception e)
                     {
-                        log[1] = "Error inserting file: " + e.ToString();    
+                        //log[1] = "Error inserting file: " + e.ToString();    
                     }
                     File.Delete(upLoadFile);
 
@@ -115,23 +119,26 @@ namespace VS
         public Dictionary<string, string> ConnStrings = new Dictionary<string, string>();
         public void AssignDictionaries()
         {   
-            //CSharpie\\
             using (StreamReader r = new StreamReader("CSharpie\\SQL_StoredProcedures.json"))
+            //using (StreamReader r = new StreamReader("SQL_StoredProcedures.json"))
             {
                 string json = r.ReadToEnd();
                 StoredProc_dict = JsonConvert.DeserializeObject<Dictionary<string,string>>(json);
             }
             using (StreamReader r = new StreamReader("CSharpie\\SQL_TableTypes.json"))
+            //using (StreamReader r = new StreamReader("SQL_TableTypes.json"))
             {
                 string json = r.ReadToEnd();
                 TypeName_dict = JsonConvert.DeserializeObject<Dictionary<string,string>>(json);
             }
             using (StreamReader r = new StreamReader("CSharpie\\Parameters.json"))
+            //using (StreamReader r = new StreamReader("Parameters.json"))
             {
                 string json = r.ReadToEnd();
                 Parameters = JsonConvert.DeserializeObject<Dictionary<string,string>>(json);
             }
             using (StreamReader r = new StreamReader("CSharpie\\SQL_ConnStrings.json"))
+            //using (StreamReader r = new StreamReader("SQL_ConnStrings.json"))
             {
                 string json = r.ReadToEnd();
                 ConnStrings = JsonConvert.DeserializeObject<Dictionary<string,string>>(json);

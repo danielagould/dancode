@@ -82,8 +82,9 @@ namespace FunctionsLibrary
                 sqlCommand.ExecuteNonQuery();
                 return true;
             }
-            catch
+            catch (Exception e)
             {
+                Console.Write(e.ToString());
                 return false;
             };
         }
